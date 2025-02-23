@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+
+body {
+    font-family: 'Jacquard 12', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+    font-family: 'Jacquard 12', sans-serif;
+}
+
+p,
+ol,
+pre {
+    text-align: left;
+    color: #444;
+    font-family: 'Jacquard 12', sans-serif;
+}
+
+.font-preview {
+    margin: 20px 0;
+}
+
+.font-sample {
+    font-family: 'Jacquard 12', sans-serif;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.font-preview label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.font-preview:hover .font-sample {
+    opacity: 1;
+}
+
+pre {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
