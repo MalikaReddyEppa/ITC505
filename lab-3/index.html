@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacquard 12 Font Preview</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jacquard 12 Font Preview</h1>
+        <p class="description">
+            I have explored various fonts available on Google Fonts and ultimately selected 'Jacquard 12' due to its distinctive and artistic design. 
+            This font stands out, with only a small percentage of users opting for it, making it a unique choice for web typography. 
+        </p>
+        
+        <div class="font-preview">
+            <label for="fontSample">Hover over this text to preview 'Jacquard 12' font</label>
+            <p id="fontSample" class="font-sample">This is a preview of Jacquard 12</p>
+        </div>
+
+        <h2>How Fonts Are Delivered to a Browser</h2>
+        <p>
+            One way to deliver a font to a client (browser) is by self-hosting the font files on the server and using the <code>@font-face</code> rule in CSS.  
+            This method ensures that the font is always available and does not depend on third-party services like Google Fonts.
+        </p>
+        <h3>Steps:</h3>
+        <ol>
+            <li>Download the desired font file (e.g., <code>.woff2</code>, <code>.ttf</code>).</li>
+            <li>Store it in a directory on the server, such as <code>fonts/</code>.</li>
+            <li>Use the <code>@font-face</code> rule in CSS to define the font.</li>
+            <li>Apply the font to elements using CSS.</li>
+        </ol>
+        <h3>Example:</h3>
+        <pre>
+@font-face {
+    font-family: 'Jacquard 12';
+    src: url('fonts/jacquard12.woff2') format('woff2');
+}
+body {
+    font-family: 'Jacquard 12', sans-serif;
+}
+        </pre>
+        <p>
+            When a user visits the webpage, the browser requests the font file from the server, downloads it, and applies it to the text.
+        </p>
+    </div>
+</body>
+</html>
