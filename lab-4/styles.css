@@ -4,8 +4,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f8f5f2; /* Soft background for readability */
-    color: #333; /* Dark grey text for contrast */
+    background-color: #f8f5f2; 
+    color: #333; 
     margin: 0;
     padding: 30px;
     line-height: 1.8;
@@ -13,7 +13,7 @@ body {
 
 
 header {
-    background-color: #2e7d32; /* Earthy green theme */
+    background-color: #2e7d32; 
     color: white;
     text-align: center;
     padding: 30px;
