@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Hypnotic Spiral Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: radial-gradient(circle, #000428, #004e92);
+        }
+        
+        svg {
+            overflow: visible;
+        }
+        
+        .spiral circle {
+            fill: none;
+            stroke-width: 4;
+            transform-origin: center;
+            animation: spiralAnimation 6s infinite linear alternate;
+        }
+        
+        .spiral circle:nth-child(1) { stroke: #ff4500; animation-delay: 0s; }
+        .spiral circle:nth-child(2) { stroke: #ffcc00; animation-delay: 0.2s; }
+        .spiral circle:nth-child(3) { stroke: #00ff00; animation-delay: 0.4s; }
+        .spiral circle:nth-child(4) { stroke: #00ffff; animation-delay: 0.6s; }
+        .spiral circle:nth-child(5) { stroke: #0000ff; animation-delay: 0.8s; }
+        .spiral circle:nth-child(6) { stroke: #8a2be2; animation-delay: 1s; }
+        
+        @keyframes spiralAnimation {
+            0% { transform: rotate(0deg) scale(1); stroke-opacity: 1; }
+            50% { transform: rotate(180deg) scale(1.2); stroke-opacity: 0.7; }
+            100% { transform: rotate(360deg) scale(1); stroke-opacity: 1; }
+        }
+        
+        .animated-name {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            fill: #ffffff;
+            animation: nameAnimation 4s infinite alternate ease-in-out;
+        }
+        
+        @keyframes nameAnimation {
+            0% { transform: translateY(0px); fill: #ffffff; }
+            50% { transform: translateY(10px); fill: #ffcc00; }
+            100% { transform: translateY(0px); fill: #ffffff; }
+        }
+        
+    </style>
+</head>
+<body>
+    <svg width="400" height="400" viewBox="0 0 400 400">
+        <g class="spiral">
+            <circle cx="200" cy="200" r="30"/>
+            <circle cx="200" cy="200" r="60"/>
+            <circle cx="200" cy="200" r="90"/>
+            <circle cx="200" cy="200" r="120"/>
+            <circle cx="200" cy="200" r="150"/>
+            <circle cx="200" cy="200" r="180"/>
+        </g>
+    </svg>
+    <svg width="400" height="100">
+        <text x="200" y="50" text-anchor="middle" class="animated-name">Malika Reddy</text>
+    </svg>
+</body>
+</html>
