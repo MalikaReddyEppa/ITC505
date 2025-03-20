@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calorie Tracking</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Optimize Your Fitness with Calorie Tracking</h1>
+        </header>
+
+        <div class="main-content">
+            <div class="menu-bar">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Fitness History</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="calorie-form">
+                <h2>Find Out How Many Calories You Burn</h2>
+                <form id="calorieForm">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" required>
+
+                    <label for="activity">Activity:</label>
+                    <select id="activity">
+                        <option value="running">Running</option>
+                        <option value="cycling">Cycling</option>
+                        <option value="swimming">Swimming</option>
+                        <option value="walking">Walking</option>
+                    </select>
+
+                    <label for="duration">Duration (minutes):</label>
+                    <input type="number" id="duration" required>
+                    
+                    <button type="submit">Estimate</button>
+                </form>
+                <p id="result"></p>
+            </div>
+
+            <div class="promo-section">
+                <h3>Advertisement</h3>
+                <a href="https://www.amazon.com/ULTRA-FUEGO-Multi-Functional-Landmine-Attachment/dp/B0CK1GJV5Q/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.skVJ09dgIkXwpAwskwUXvQSoJYKc7n1OtiexZds-p04SpcsQCyl4CiJYx9_FRmoh_hZjNRvfvsRqwiGNg3f5ZpD4zVSE9So3ZYCkahWjCw2ezIu31H59l9B5wF1F3UAUPZ15-_bFDPmjbP1wv8UPH266Zzsi-K95d8GslUqVu8IN4SSkeFtpm8s5dRER_JdE496dGNNFU8hzS1s3uqprnpfmHC85Xk7lkXtsnYlfmFSdTEpdxEnMSJ02ER3VOLF3SNFVpniaoBRlGLQ8vy8e8bhs_1RCMp7cvHoFk8sLfjI.DMaFdWtTTy6eCAHpKB6XDsnMMtb3dnC3bb6UdfhTeqk&dib_tag=se&hvadid=694456366737&hvdev=c&hvexpln=67&hvlocphy=9030289&hvnetw=g&hvocijid=2990503842662842938--&hvqmt=e&hvrand=2990503842662842938&hvtargid=kwd-5095667503&hydadcr=15186_13617436&keywords=amazon%2Bfitness%2Bequipment&mcid=3bdbf017534c3cdca77a9203e7be3d68&qid=1742435145&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank">
+                    <img src="fitness-2.jpg" alt="Advertisement">
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Addendum: This calculator estimates calorie burn based on activity type, weight, and duration. The challenge was mapping different activities to their calorie burn rates, solved by using a JavaScript object for activity multipliers.</p>
+            <p>Last updated: <span id="lastModified"></span></p>
+            <script>
+                document.getElementById('lastModified').textContent = document.lastModified;
+            </script>
+        </footer>
+    </div>
+</body>
+</html>
