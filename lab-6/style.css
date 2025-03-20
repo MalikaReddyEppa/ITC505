@@ -1,0 +1,79 @@
+/* Reset default margin and padding */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Header styles */
+header {
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.promo-section {
+    background-color:  #f0f0f0; 
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto; 
+}
+
+.promo-section img {
+    max-width: 100%;
+    height: auto;
+    background: white;
+}
+
+/* Main content area */
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sidebar styles */
+.menu-bar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 200px;
+}
+
+/* Content area styles */
+.calorie-form {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+/* Footer styles */
+footer {
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
