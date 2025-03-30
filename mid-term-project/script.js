@@ -18,7 +18,7 @@ const story = [
       { text: "Solve the puzzle", next: 4 },
       { text: "Leave and look for the key", next: 3 }
     ],
-    image: "images/secret_door.webp"
+    image: "images/mansion.jpg"
   },
   {
     text: "You search for a key but find nothing. However, you notice a hidden vent in the wall.",
