@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Mystery Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="gameContainer" class="main">
+    <div class="innerContent">
+      <h1>Welcome to the Mystery Adventure Game</h1>
+      <div id="choices" class="choices" style="display:flex;justify-content: space-evenly">
+        <button class="button-85" onClick="startGame()">Start Game</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <footer>
+    <p>In creating this interactive mystery game, I focused on building an engaging narrative with branching choices that influence the storyline. The challenge was ensuring smooth transitions between stages, which I resolved by carefully managing game state updates and transitions in JavaScript. I chose CSS animations to enhance the user experience and used flexbox to ensure the game was responsive across devices. Handling multiple choice paths required clear structuring of the story in an array, making it easier to manage game stages. Through this project, I learned the importance of organizing dynamic content and ensuring seamless interactivity for a smooth gameplay experience.</p>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script type="text/javascript">
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
