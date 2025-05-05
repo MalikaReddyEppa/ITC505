@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  background-image: url("back-ground.jpg");
+}
+
+.title-banner {
+  margin-top: 20px;
+  font-size: 2em;
+  color: aqua;
+}
+
+#tileMap {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  justify-content: center;
+  gap: 5px;
+  margin: 30px auto;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tile.activated {
+  background-color: rgb(15, 70, 114);
+}
+
+.button-section {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.addendum {
+  max-width: 80000px;
+  margin: 40px auto;
+  text-align: left;
+  border-radius: 8px;
+  color: aqua;
+}
+
+footer {
+  margin-top: 40px;
+  color: aqua;
+}
